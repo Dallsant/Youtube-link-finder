@@ -9,8 +9,10 @@ loop = asyncio.get_event_loop()
 
 
 def get_song_names():
-	with open("songnames.txt", 'r') as f:
+	with open("Songnames.txt", 'r') as f:
 		data = f.readlines()
+		if(len(data)==0):
+			raise UserWarning('Songnames file is empty')
 	return data
 
 async def make_requests(names):
@@ -36,10 +38,10 @@ def filter_resposes(responses):
 
 # Write down all links in txt file, 
 def write_links(links):	
-	with open("links.txt", 'w+') as f:
+	with open("Links.txt", 'w+') as f:
 		f.write('')
 	for link in links:
-		with open("links.txt", 'a') as f:
+		with open("Links.txt", 'a') as f:
 			f.write(f'{link}\n')
 
 if __name__ == '__main__':
