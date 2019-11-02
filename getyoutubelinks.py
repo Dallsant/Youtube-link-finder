@@ -15,7 +15,8 @@ def get_song_names():
 
 async def make_requests(names):
 	responses = []
-	futures = [loop.run_in_executor(executor, requests.get, f"https://www.youtube.com/results?search_query={name[:len(name)-1]}") for name in names]
+	futures = [loop.run_in_executor(executor, requests.get,
+	 f"https://www.youtube.com/results?search_query={name[:-1]}") for name in names]
 	await asyncio.wait(futures)
 	for response in futures:
 		responses.append(response.result().content)
