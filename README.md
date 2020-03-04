@@ -23,7 +23,7 @@ Let Down - Radiohead
 
 **How to run?**
 
-3 - run by using once your songnames.txt is full:
+3 - Run by using once your songnames.txt is full:
   * python3 getyoutubelinks.py
 
 ... Your output will be located at Links.txt
