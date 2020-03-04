@@ -11,19 +11,19 @@ Script to asynchronously retrieve youtube recommendations from names in a txt fi
 
   * pip install requirements.txt
 
-
 **How to use?**
 
-Inside songnames.txt add the names of the songs you're planning to get links from:
+2 - Inside songnames.txt add the names of the songs you're planning to get links from:
 
 Example:
 
 La Cucaracha
+
 Let Down - Radiohead
 
 **How to run?**
 
-run by using once your songnames.txt is full:
+3 - run by using once your songnames.txt is full:
   * python3 getyoutubelinks.py
 
 ... Your output will be located at Links.txt
