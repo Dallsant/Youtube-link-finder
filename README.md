@@ -9,7 +9,7 @@ Script to asynchronously retrieve youtube recommendations from names in a txt fi
 
 1.3 - Install python packages by running:
 
-  * pip install requirements.txt
+  * pip install -r requirements.txt
 
 **How to use?**
 
